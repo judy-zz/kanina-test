@@ -1,4 +1,9 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+
+# Disable spring first.
+puts "Spring stopped" if system('spring stop')
+ENV["DISABLE_SPRING"] ||= 'true'
+
 ENV["RAILS_ENV"] ||= 'test'
 require 'spec_helper'
 require File.expand_path("../../config/environment", __FILE__)
