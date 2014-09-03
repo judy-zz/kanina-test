@@ -1,0 +1,18 @@
+# Refer to Bunny's new connection parameters for settings here.
+# http://rubybunny.info/articles/connecting.html
+
+defaults: &defaults
+  host: localhost
+  port: 5672
+  ssl: false
+  vhost: /
+  user: guest
+  pass: guest
+  heartbeat: :server
+  threaded: true
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
