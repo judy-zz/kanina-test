@@ -11,7 +11,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'haml-rails'
-gem 'pg'
+gem 'sqlite3'
 gem 'puma'
 
 # ===
@@ -39,6 +39,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'rspec-rails'
+  gem 'evented-spec', '~> 1.0.0.beta2', github: 'ruby-amqp/evented-spec'
 end
 group :test do
   gem 'capybara'
